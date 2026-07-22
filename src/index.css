@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cs-naranja: #FF7A00;
+    --cs-azul-cian: #00A8E8;
+    --cs-azul-inst: #2B5B84;
+    --cs-verde: #7BC043;
+    --cs-azul-oscuro: #082B50;
+    --cs-negro: #1A1A1A;
+    --cs-blanco: #FFFFFF;
+    --cs-gris-claro: #F4F6F8;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Sports Background Patterns & Shapes */
+.cs-pattern-dots {
+  background-image: radial-gradient(rgba(0, 168, 232, 0.15) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.cs-pattern-grid {
+  background-image: linear-gradient(to right, rgba(43, 91, 132, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(43, 91, 132, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.cs-clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.cs-clip-diagonal-reverse {
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+}
+
+.cs-clip-badge {
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+}
+
+.cs-badge-skew {
+  transform: skewX(-12deg);
+}
+
+.cs-badge-unskew {
+  transform: skewX(12deg);
+}
+
+/* Bento Grid Theme Helper Classes */
+.cs-title {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.cs-gradient-orange {
+  background: linear-gradient(135deg, #FF7A00 0%, #FF9E4D 100%);
+}
+
+.cs-gradient-blue {
+  background: linear-gradient(135deg, #082B50 0%, #2B5B84 100%);
+}
+
+.cs-bento-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(8, 43, 80, 0.08);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.cs-bento-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cs-bento-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(8, 43, 80, 0.15);
+}
+
+/* Encapsulation wrapper class cs-evento */
+.cs-evento {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  color: #1A1A1A;
+  background-color: #F4F6F8;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #082B50;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF7A00;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00A8E8;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(255, 122, 0, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(255, 122, 0, 0.8); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+

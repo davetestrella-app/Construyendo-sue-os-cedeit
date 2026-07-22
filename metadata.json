@@ -1,0 +1,6 @@
+{
+  "name": "Construyendo Sueños - Educación & Deporte",
+  "description": "Landing page oficial para el evento Construyendo Sueños Popayán 2026 organizado por CEDEIT. Integración académica, deportiva y cultural.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
